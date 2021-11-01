@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Мяу!</title>
+
+</head>
+
+<body>
+    <main>
+        <h1>Опросник для владельцев котиков</h1>
+        <form>
+            <fieldset>
+                <legend>Информация о владельце</legend>
+                <div>
+                    <label for="ownername">Имя</label><br>
+                    <input type="text" name="name" size="50" id="ownername" required />
+                </div>
+                <div>
+                    <label for="phonenumber">Номер телефона</label><br>
+                    <input type="tel" name="phone" id="phonenumber" required/>
+                </div>
+                <div>
+                    <label for="email">Электронный адрес</label><br>
+                    <input type="text" name="email" size="50" id="email" pattern="" required />
+                </div>
+            </fieldset><br>
+
+            <fieldset>
+                <label for="petname">Кличка питомца</label>
+                <input type="text" size="50" id="petname" required />
+            </fieldset><br>
+
+            <div>
+                <label for="breed">Порода питомца</label>
+                <select id="breed">
+                    <option value="Беспородный">Беспородный</option>
+                    <option value="Абиссинская">Абиссинская</option>
+                    <option value="Бенгальская">Бенгальская</option>
+                    <option value="Девон рекс">Девон рекс</option>
+                    <option value="Египетская">Египетская</option>
+                    <option value="Корниш рекс" selected="selected">Корниш рекс</option>
+                    <option value="Манчкин">Манчкин</option>
+                    <option value="Персидская">Персидская</option>
+                    <option value="Питерболд">Питерболд</option>
+                    <option value="Сфинкс">Сфинкс</option>
+                    <option value="Шотландская вислоухая">Шотландская вислоухая</option>
+                </select>
+            </div><br>
+
+
+            <fieldset>
+                <legend>Чем питается</legend>
+                <label><input type="checkbox" checked="checked" name="food" value="Сухой корм" />Сухой корм</label>
+                <label><input type="checkbox" name="food" value="Влажный корм" />Влажный корм</label>
+                <label><input type="checkbox" name="food" value="Натуральный корм" />Натуральный корм</label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Пол питомца</legend>
+                <label><input type="radio" checked="checked" name="sex" value="Самец" />Самец</label>
+                <label><input type="radio" name="sex" value="Самка" />Самка</label>
+                <label><input type="radio" name="sex" value="Божество конечно" />Их величество</label>
+            </fieldset><br>
+
+            <div>
+                <label for="petphoto">Приложить фото питомца</label>
+                <input type="file" id="petphoto" />
+            </div><br>
+
+            <div>
+                <label for="comment">Комментарий владельца</label><br>
+                <textarea name="comment" cols=50 rows=10 id="comment">Ваш комментарий</textarea>
+            </div>
+
+            <input type="submit" id="btn" value="Сохранить" />
+        </form>
+    </main>
+
+<script src="form.js"></script>
+    </body>
+
+</html>

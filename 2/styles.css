@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-right: 5px;
+}
+
+input:required:valid {
+    border-color: rgb(13, 245, 13);
+}
